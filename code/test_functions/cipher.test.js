@@ -1,5 +1,13 @@
-import getReverse from "../functions/reverse.js"
+import getCipher from "../functions/cipher.js"
 
-test(`Capitalising the first letter`, () => {
-    expect(getReverse("abc def")).toBe("fed cba");
+test.each([
+    ["def", 1, "efg"],
+    ["abc", 18, "stu"],
+    ["xyz", 3, "abc"],
+    ["abcd", 6, "ghij"],
+    ["a b cd", 3, "d e fg"]
+])
+
+("Caesar Cipher (%s, %i → %s)", (a, b, c) => {
+    expect(getCipher(a, b)).toBe(c);
 });

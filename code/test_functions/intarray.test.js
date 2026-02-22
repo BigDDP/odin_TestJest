@@ -1,5 +1,5 @@
-import getReverse from "../functions/reverse.js"
+// import getArray from "../functions/intarray.js"
 
-test(`Capitalising the first letter`, () => {
-    expect(getReverse("abc def")).toBe("fed cba");
-});
+// test(`Capitalising the first letter`, () => {
+//     expect(getArray("abc def")).toBe("fed cba");
+// });

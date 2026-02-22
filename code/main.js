@@ -22,9 +22,9 @@ form.addEventListener("submit", (e) => {
         initCapital(form.str.value);
         initReverse(form.str.value);
     };
-    if (form.inp1.value && form.inp2.value) initCalc(form.inp1.value, form.inp2.value);
-    if (form.str.value && form.inp1.value) initCipher(form.str.value, form.inp1.value);
-    if (form.inp_arr.value) initCapital(form.inp_arr.value);
+    if (form.int1.value && form.int2.value) initCalc(form.int1.value, form.int2.value);
+    if (form.str.value && form.int1.value) initCipher(form.str.value, form.int1.value);
+    if (form.int_arr.value) initCapital(form.int_arr.value);
 });
 
 function initCapital(inp) {
@@ -36,11 +36,11 @@ function initReverse(inp) {
 };
 
 function initCalc(inp1, inp2) {
-    console.log("Function: initCalc", getCalc(inp1, inp2));
+    console.log("Function: initCalc", getCalc(Number(inp1), Number(inp2)));
 };
 
 function initCipher(inp1, inp2) {
-    console.log("Function: initCipher", getCipher(inp1, inp2));
+    console.log("Function: initCipher", getCipher(inp1, Number(inp2)));
 };
 
 function initArray(inp) {
