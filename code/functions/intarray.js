@@ -1,6 +1,6 @@
 export default function getArray(inp1) {
     let regex = /[0-9]/
-    intArray = (inp1.split(','))
+    let intArray = (inp1.split(','))
         .filter(char => regex.test(char))
         .map(Number);
 
