@@ -1,4 +1,8 @@
 import getCapital from "./functions/capitalise.js"
+import getReverse from "./functions/reverse.js"
+import getCalc from "./functions/calc.js"
+import getCipher from "./functions/cipher.js"
+import getArray from "./functions/intarray.js"
 
 const form = document.querySelector("form");
 const inputs = document.querySelectorAll("input");
@@ -24,22 +28,21 @@ form.addEventListener("submit", (e) => {
 });
 
 function initCapital(inp) {
-    console.log(inp)
     console.log("Function: initCapital", getCapital(inp));
 };
 
 function initReverse(inp) {
-    console.log("Function: initReverse");
+    console.log("Function: initReverse", getReverse(inp));
 };
 
 function initCalc(inp1, inp2) {
-    console.log("Function: initCalc");
+    console.log("Function: initCalc", getCalc(inp1, inp2));
 };
 
 function initCipher(inp1, inp2) {
-    console.log("Function: initCipher");
+    console.log("Function: initCipher", getCipher(inp1, inp2));
 };
 
 function initArray(inp) {
-    console.log("Function: initArray");
+    console.log("Function: initArray", getArray(inp));
 };
