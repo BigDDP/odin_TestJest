@@ -1,4 +1,4 @@
 export default function getArray(inp1) {
-
-    return ;
+    intArray = Number(inp1.split(','))
+    return intArray;
 };

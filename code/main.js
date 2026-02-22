@@ -28,11 +28,11 @@ form.addEventListener("submit", (e) => {
 });
 
 function initCapital(inp) {
-    console.log("Function: initCapital", getCapital(inp));
+    console.log("Function: initCapital", getCapital(String(inp)));
 };
 
 function initReverse(inp) {
-    console.log("Function: initReverse", getReverse(inp));
+    console.log("Function: initReverse", getReverse(String(inp)));
 };
 
 function initCalc(inp1, inp2) {
@@ -40,9 +40,9 @@ function initCalc(inp1, inp2) {
 };
 
 function initCipher(inp1, inp2) {
-    console.log("Function: initCipher", getCipher(inp1, Number(inp2)));
+    console.log("Function: initCipher", getCipher(String(inp1), Number(inp2)));
 };
 
 function initArray(inp) {
-    console.log("Function: initArray", getArray(inp));
+    console.log("Function: initArray", getArray(String(inp)));
 };
