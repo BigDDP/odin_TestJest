@@ -24,7 +24,7 @@ form.addEventListener("submit", (e) => {
     };
     if (form.int1.value && form.int2.value) initCalc(form.int1.value, form.int2.value);
     if (form.str.value && form.int1.value) initCipher(form.str.value, form.int1.value);
-    if (form.int_arr.value) initCapital(form.int_arr.value);
+    if (form.int_arr.value) initArray(form.int_arr.value);
 });
 
 function initCapital(inp) {
